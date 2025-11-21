@@ -1,5 +1,5 @@
 
-# DeepSeek Computer Vision Calorie Calculator
+# Computer Vision Calorie Calculator
 
 This project is a small full-stack demo:
 
