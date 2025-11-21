@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { UploadForm } from "./components/UploadForm";
 import { ResultCard } from "./components/ResultCard";
 
-const API_BASE = "http://localhost:8000";
+const API_BASE =
+  import.meta.env.VITE_API_BASE || "http://localhost:8000";
+
 
 function App() {
   const [loading, setLoading] = useState(false);
