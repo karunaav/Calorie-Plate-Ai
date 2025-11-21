@@ -5,7 +5,7 @@ This project is a small full-stack demo:
 
 - **Backend (FastAPI)**: accepts a meal image + optional text description, performs a
   lightweight computer vision pass (size, average color, brightness), and then
-  calls **DeepSeek Chat API** to estimate calories and macros.
+  calls **gemini Chat API** to estimate calories and macros.
 - **Frontend (React + Vite)**: modern UI with a 3D-ish gradient dashboard where you
   upload the photo and view results.
 
@@ -44,7 +44,7 @@ may be inaccurate, and are not medical or dietary advice.
    - Optionally describe the dish (e.g., "1 cup dal, 1.5 cups rice, 1 chapati").
    - The backend will:
      - Extract simple visual features via Pillow + NumPy.
-     - Send a structured prompt to DeepSeek (`deepseek-chat` model).
+     - Send a structured prompt to Gemini Ai.
      - Return estimated calories + macros, reasoning, and suggestions.
 
 You can later swap the `analyze_image_basic` function with a real food-recognition
